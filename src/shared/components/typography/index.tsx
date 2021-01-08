@@ -1,7 +1,7 @@
 import React from 'react';
 import { Display } from './styles';
 interface Props {
-  size?: string;
+  size?: 'medium' | 'large';
   weight?: string;
   line?: string;
 }
