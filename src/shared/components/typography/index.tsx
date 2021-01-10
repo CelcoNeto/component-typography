@@ -1,13 +1,20 @@
-import React from "react";
-import { Display } from "./styles";
+import React, { memo } from "react";
+import { Typograph } from "./styles";
 import { TypographyProps } from "./props";
 
-export const Typography: React.FC<TypographyProps> = ({
-  size,
-  weight,
-  line,
-}) => (
-  <Display size={size} weight={weight} line={line}>
+/**
+ * @param size Tamanho da fonte
+ * @param weight Peso da fonte (bold | regular)
+ * @param tag Tag HTML
+ */
+export const Typography: React.FC<TypographyProps> = memo((props) => (
+  <Typograph
+    size={props.size}
+    weight={props.weight}
+    line={props.line}
+    variant={props.tag}
+    fontColor={props.fontColor}
+  >
     TESTE
-  </Display>
-);
+  </Typograph>
+));
