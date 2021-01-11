@@ -1,6 +1,6 @@
 import React, { memo } from 'react';
-import { Typograph } from './styles';
-import { TypographyProps } from './props';
+import { Typograph } from '../shared/components/typography/styles';
+import { TypographyProps } from '../shared/components/typography/props';
 
 /**
  * @param size Tamanho da fonte
